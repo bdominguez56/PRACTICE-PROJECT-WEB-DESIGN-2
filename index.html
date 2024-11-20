@@ -1,125 +1,127 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<style type="text/css">
-		
-		body {
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			height: 100%; 
-			max-height: 100%; 
-			font-family:Sans-serif;
-			line-height: 1.5em;
-		}
-		
-		#header {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100px; 
-			overflow: hidden; 
-			background: #150300;
-		}
-		
-		#logo {
-			padding:10px;
-			float:left;
-		}
-		
-		main {
-			position: fixed;
-			top: 100px; 
-			left: 0; 
-			right: 0;
-			bottom: 0;
-			overflow: auto; 
-			background: #fff;
-		}
-		
-		.innertube {
-			margin: 15px; 
-		}
-		
-		p {
-			color: GREY;
-		}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project webdesign 2</title>
+    <style>
+        
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+        }
 
-		/* Menu */
-		nav { 
-			margin:0 auto; 
-			padding:0; 
-			float:right;
-		}
-		nav ul { 
-			list-style:none; 
-			padding:0; 
-			float:left;
-		}
-		nav ul li { 
-			margin:0; 
-			padding:0 0 0 8px; 
-			float:left;
-		}
-		nav ul li a { 
-			display:block; 
-			margin:0; 
-			padding:8px 20px; 
-			color:WHITE; 
-			text-decoration:none;
-		}
-		nav ul li.active a, #top-nav ul li a:hover { 
-			color:#WHITE;
-		}
-				
-		* html body{
-			padding: 100px 0 0 0; 
-		}
-		
-		* html main{ 
-			height: 100%; 
-			width: 100%; 
-		}
-		
-		</style>
-		
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: WHITE;
+        }
 
-	
-	</head>
-	
-	<body>		
+        /* Header Styling */
+        header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background-color: #150300;
+            color: white;
+            padding: 10px 20px;
+        }
 
-		<header id="header">
-			<div id="logo">
-				<h1>THE PLACE</h1>
-			</div>
-			<nav>
-				<div class="innertube">
-				<ul>
-					<li><a href="#">WELCOME</a></li>
-					<li><a href="#">MENU</a></li>
-					<li><a href="#">RESERVATIONS</a></li>
-					<li><a href="#">NEWS</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
-				</div>
-			</nav>
-		</header>
+        /* Home text in header */
+        .home-text {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
 
-  
+        /* Navigation Links Styling */
+        .nav-links {
+            list-style: none; 
+            display: flex; 
+            gap: 20px;  
+        }
 
- <main class="flex">
-        <section class="w-1/2 p-12">
-            <h2 class="text-5xl font-bold mb-4" style="color:orange;">Discover<br>OUR STORY</h2>
-            <div class="w-12 h-1 bg-orange-500 mb-6"></div>
-            <p class="text-lg mb-6">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-          <a href="#" class="uppercase font-semibold tracking-wide border-2 border-black px-6 py-2 inline-block hover:bg-black hover:text-white transition-colors">About us</a>
-        </section>
-<aside>
-<img src="our-story.jpg" alt="photo of  diner">
-</aside>
+        .nav-links li {
+            display: inline-block;
+        }
+
+        .nav-links a {
+            text-decoration: none; 
+            color: white;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            color: #ddd; 
+        }
+
+        /* Main Content Layout */
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Left Section (Text) Styling */
+        .left {
+            flex: 1; 
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        /* Right Section (Image) Styling */
+        .right {
+            flex: 1; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%; /
+            height: auto;
+        }
+
+       
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Home Text on the left -->
+        <div class="home-text">THE PLACE</div>
+        
+        <!-- Navigation Links on the right -->
+        <ul class="nav-links">
+            <li><a href="#">WELCOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">RESERVATIONS</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        <!-- Left Section (Text) -->
+        <div class="left">
+<h2 style="color: orange;">Discover OUR STORY!</h2>
+            <img src="star-icon.png" alt="Star Icon" style="width: 50px; height: 50px; margin-top: 20px;">
+            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+        </div>
+
+        <!-- Right Section (Image) -->
+        <div class="right">
+            <img src="your-image.jpg" alt="Description of Image">
+        </div>
+    </div>
+
+</body>
+</html>
    </main>
 </body>
 </html>
